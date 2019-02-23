@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+body {
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+::-moz-selection {
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+
+button:focus,
+input:focus,
+textarea:focus{
+    outline-color: black;
+}
+
+.title
+{
+    font-size: 2.5em;
+    width: 100%;
+    text-align:center;
+}
+
+.add-note-form-container{
+    width: 30%;
+
+}
+
+.add-note-form {
+    display:none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.note-form-author-label,
+.note-form-subject-label
+{
+    display: inline-block;
+    width: 70px;
+}
+
+.note-form-author-input,
+.note-form-subject-input,
+.note-form-content-input,
+.edit-content-input,
+.edit-subject-input
+{
+    font-family: 'Montserrat-Medium', sans-serif;
+    min-width: 100px;
+}
+
+
+
+.note-form-content-input {
+    min-width: 100%;
+    min-height: 110px;
+}
+
+.note-form-save-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message,
+.error-edit-message{
+    display: block;
+    color: darkred;
+}
+
+.error-input {
+   border: 1px solid darkred  !important;
+}
+
+.main {
+    width: 100%;
+    padding: 5px;
+}
+
+.note {
+    border: 1px solid gray;
+
+    min-height: 250px;
+    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+
+.note-header {
+
+}
+
+.note-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.note-header {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.note-header-title
+{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.note-header-id, 
+.note-header-author, 
+.note-header-date 
+{
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+.notes
+{
+    width:50%;
+}
+
+.note-content {
+    padding: 0px 0px 5px 5px;
+}
+
+.add-button,
+.save-button,
+.up-button, 
+.down-button, 
+.edit-button, 
+.remove-button,
+.edit-save-button,
+.edit-cancel-button
+{
+    font-family: 'Montserrat-Medium', sans-serif;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-right: none;
+    border-top: none;
+}
+
+.add-button,
+.save-button
+{
+    border: 1px solid gray;
+    font-size: 1.2em;
+}
+
+.edit-save-button {
+    border: 1px solid gray;
+    border-right: none;
+}
+
+.edit-cancel-button {
+    border: 1px solid gray;
+}
+
+.edit-content-input {
+    min-width: 70%;
+    max-width: 99%;
+    min-height: 100px;
+}
+
+.add-button:hover,
+.save-button:hover,
+.up-button:hover, 
+.down-button:hover, 
+.edit-button:hover, 
+.remove-button:hover,
+.edit-save-button:hover,
+.edit-cancel-button:hover{
+    /*background-color: #ECECEC;*/
+    background-color: black;
+    color: white;
+}
+
+
+.note-text {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: 400;
+    white-space: pre;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.edit-form-container {
+    border-top: 1px solid gray;
+    padding: 5px;
+
+}
+.edit-form {
+    padding: 5px;
+}
+
+.edit-subject-label {
+    margin-right: 10px;
+}

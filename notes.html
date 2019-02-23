@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <title>Notes 4000</title>
+        <link href="style.css" rel="stylesheet" >
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Notes 4000</h1>
+        </header>
+        <div class="add-note-form-container">
+            <p><button type="button" id="add-note-button" class="add-button">Add new Note</button></p>
+            <form id="add-note-form" class="add-note-form">
+                <p>
+                    <label for="author" class="note-form-author-label">Author:</label>
+                    <input type="text" id="author" class="note-form-author-input">
+                </p>
+                <p>
+                    <label for="subject" class="note-form-subject-label">Subject:</label>
+                    <input type="text" id="subject" class="note-form-subject-input">
+                </p>
+
+                <label for="content" class="note-form-content-label">Content: </label>
+                <p>
+                    <textarea id="content" class="note-form-content-input" ></textarea>
+                </p>                
+                <p class="note-form-save-button-container" id="note-form-save-button-container">
+                    <button type ="button" id="save-button" class="save-button">Save</button>
+                    
+                </p>              
+            </form>
+           
+        </div>
+        <main class="main">
+            <section id="notes" class="notes">               
+            </section>
+        </main>
+
+        <script src="scripts/jquery-3.3.1.min.js"></script>
+        <script src="scripts/Note.js"></script>
+        <script src="scripts/NoteService.js"></script>
+        <script src="scripts/NoteView.js"></script>
+        <script src="scripts/NoteController.js"></script>
+    </body>
+</html>
